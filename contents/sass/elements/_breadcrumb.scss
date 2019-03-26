@@ -1,0 +1,51 @@
+.breadcrumb {
+  background-color: transparent;
+  padding: 8px 0;
+  text-align: center;
+  display: block;
+
+  &-item {
+    display: inline-block;
+    &:before {
+      opacity: .4;
+    }
+    a {
+      // display: block;
+      
+      font-weight: 400;
+      
+      &:hover,&:focus {
+        color: lighten($mau-xanh-md, 25);
+        text-decoration: none;
+      }
+    }
+
+    &.active,a,& {
+      color: $gray-4;
+      font-size: 16px;
+      line-height: normal;
+      text-transform: capitalize;
+    }
+
+    &.active {
+      font-weight: 700;
+
+      &:before {
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+@include responsive(xs) {
+  .breadcrumb {
+    // margin-bottom: 0;
+    padding-top: 0;
+
+    &-item {
+      &.active,&,a {
+        font-size: 11px;
+      }
+    }
+  }
+}

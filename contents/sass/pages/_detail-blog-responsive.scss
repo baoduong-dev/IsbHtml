@@ -1,0 +1,68 @@
+@include responsive(xs) {
+  .detail-blog-header {
+    padding-top: 50px;
+
+    h1 {
+      font-size: 32px;
+    }
+  }
+
+  .detail-blog-content {
+    .top-post-thumb {
+      margin-left: -15px;
+      margin-right: -15px;
+      padding-bottom: 60%;
+
+      img {
+        position: static;
+        height: auto;
+      }
+    }
+  }
+
+  .related-blog {
+    padding-bottom: 0;
+  }
+}
+
+@include responsive(sm) {
+  .detail-blog-header {
+    padding-top: 50px;
+
+    h1 {
+      font-size: 32px;
+    }
+
+    .dash-icon {
+      margin: 50px auto;
+    }
+  }
+
+  .detail-blog-content {
+    .top-post-thumb {
+      margin-left: -15px;
+      margin-right: -15px;
+      padding-bottom: 60%;
+
+      img {
+        position: static;
+        height: auto;
+      }
+    }
+  }
+
+  .related-blog {
+    padding-bottom: 0;
+  }
+}
+
+
+@include responsive(md) {
+  .detail-blog-header {
+    padding-top: 50px;
+  }
+
+  .related-blog {
+    padding-bottom: 0;
+  }
+}

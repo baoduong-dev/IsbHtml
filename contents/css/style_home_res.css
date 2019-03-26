@@ -1,0 +1,292 @@
+@media (max-width: 575.8px) {
+  .bg-head-home {
+    background-size: 120%;
+    background-image: url(../../images/theme1/bg-head-home-480.jpg); }
+    .bg-head-home .text {
+      padding: 80px 0 115px; }
+    .bg-head-home .small-label {
+      font-size: 18px; }
+    .bg-head-home .big-label {
+      letter-spacing: 10px;
+      font-size: 45px;
+      margin-bottom: 10px;
+      margin-top: 10px; }
+    .bg-head-home .techs {
+      display: none; }
+
+  .about .title, .top-projects .title, .why-us .title {
+    font-size: 30px;
+    line-height: 1.4; }
+
+  .about {
+    padding-top: 10px; }
+    .about p {
+      font-size: 17px; }
+
+  .services .service {
+    margin-bottom: 40px; }
+    .services .service:last-child {
+      margin-bottom: 20px; }
+    .services .service-icon {
+      margin-bottom: 25px; }
+    .services .service-name a {
+      font-size: 22px; }
+    .services .service p {
+      font-size: 17px;
+      margin-bottom: 0; }
+
+  .top-projects {
+    padding-top: 110px;
+    padding-bottom: 110px; }
+    .top-projects .project-list {
+      margin-top: 50px; }
+
+  .why-us {
+    padding-top: 40px; }
+    .why-us .skills {
+      padding-top: 0; }
+    .why-us .skill {
+      margin-bottom: 20px;
+      padding: 18px; }
+      .why-us .skill p {
+        font-size: 17px;
+        padding-left: 10px; }
+
+  .how-works .step {
+    padding: 5px 0; }
+    .how-works .step:before {
+      left: 24px; }
+    .how-works .step .stt {
+      width: 50px;
+      height: 50px;
+      border-width: 3px; }
+      .how-works .step .stt span {
+        font-size: 24px;
+        line-height: 45px; }
+    .how-works .step .plan {
+      padding-left: 30px;
+      padding-top: 12px; }
+      .how-works .step .plan-name {
+        font-size: 20px; }
+      .how-works .step .plan p {
+        font-size: 16px; }
+    .how-works .step:hover .stt {
+      box-shadow: 0 0 0 6px rgba(2, 38, 98, 0.12); }
+      .how-works .step:hover .stt span {
+        font-size: 30px; } }
+@media (min-width: 576px) and (max-width: 767.8px) {
+  .bg-head-home {
+    background-size: 100% 100%; }
+    .bg-head-home .text {
+      padding: 80px 0 115px; }
+    .bg-head-home .small-label {
+      font-size: 22px; }
+    .bg-head-home .big-label {
+      letter-spacing: 10px;
+      font-size: 75px;
+      margin-bottom: 10px;
+      margin-top: 10px; }
+    .bg-head-home .techs {
+      display: none; }
+
+  .about .title, .top-projects .title, .why-us .title {
+    font-size: 30px;
+    line-height: 1.4; }
+
+  .about {
+    padding-top: 10px; }
+    .about p {
+      font-size: 17px; }
+
+  .services .service {
+    margin-bottom: 40px; }
+    .services .service:last-child {
+      margin-bottom: 20px; }
+    .services .service-icon {
+      margin-bottom: 25px; }
+    .services .service-name a {
+      font-size: 22px; }
+    .services .service p {
+      font-size: 17px;
+      margin-bottom: 0; }
+
+  .top-projects {
+    padding-top: 110px;
+    padding-bottom: 110px; }
+    .top-projects .project-list {
+      margin-top: 50px; }
+
+  .why-us {
+    padding-top: 40px; }
+    .why-us .skills {
+      padding-top: 0; }
+    .why-us .skill {
+      margin-bottom: 20px;
+      padding: 18px; }
+      .why-us .skill p {
+        font-size: 17px;
+        padding-left: 10px; }
+
+  .how-works .step {
+    padding: 5px 0; }
+    .how-works .step:before {
+      left: 24px; }
+    .how-works .step .stt {
+      width: 50px;
+      height: 50px;
+      border-width: 3px; }
+      .how-works .step .stt span {
+        font-size: 24px;
+        line-height: 45px; }
+    .how-works .step .plan {
+      padding-left: 30px;
+      padding-top: 12px; }
+      .how-works .step .plan-name {
+        font-size: 20px; }
+      .how-works .step .plan p {
+        font-size: 16px; }
+    .how-works .step:hover .stt {
+      box-shadow: 0 0 0 6px rgba(2, 38, 98, 0.12); }
+      .how-works .step:hover .stt span {
+        font-size: 30px; } }
+@media (min-width: 768px) and (max-width: 991.8px) {
+  .bg-head-home {
+    background-size: 100% auto; }
+    .bg-head-home .text {
+      padding: 80px 0 115px; }
+    .bg-head-home .small-label {
+      font-size: 22px; }
+    .bg-head-home .big-label {
+      letter-spacing: 10px;
+      font-size: 75px;
+      margin-bottom: 10px;
+      margin-top: 10px; }
+    .bg-head-home .techs {
+      display: none; }
+
+  .about .title, .top-projects .title, .why-us .title {
+    font-size: 30px;
+    line-height: 1.4; }
+
+  .about {
+    padding-top: 10px; }
+    .about p {
+      font-size: 17px; }
+
+  .services .service {
+    margin-bottom: 40px; }
+    .services .service:last-child {
+      margin-bottom: 20px; }
+    .services .service-icon {
+      margin-bottom: 25px; }
+    .services .service-name a {
+      font-size: 22px; }
+    .services .service p {
+      font-size: 17px;
+      margin-bottom: 0; }
+
+  .top-projects {
+    padding-top: 110px;
+    padding-bottom: 110px; }
+    .top-projects .project-list {
+      margin-top: 50px; }
+
+  .why-us {
+    padding-top: 40px; }
+    .why-us .skills {
+      padding-top: 0; }
+    .why-us .skill {
+      margin-bottom: 20px;
+      padding: 18px; }
+      .why-us .skill p {
+        font-size: 17px;
+        padding-left: 10px; }
+
+  .how-works .step {
+    padding: 5px 0; }
+    .how-works .step:before {
+      left: 24px; }
+    .how-works .step .stt {
+      width: 50px;
+      height: 50px;
+      border-width: 3px; }
+      .how-works .step .stt span {
+        font-size: 24px;
+        line-height: 45px; }
+    .how-works .step .plan {
+      padding-left: 30px;
+      padding-top: 12px; }
+      .how-works .step .plan-name {
+        font-size: 20px; }
+      .how-works .step .plan p {
+        font-size: 16px; }
+    .how-works .step:hover .stt {
+      box-shadow: 0 0 0 6px rgba(2, 38, 98, 0.12); }
+      .how-works .step:hover .stt span {
+        font-size: 30px; } }
+@media (min-width: 992px) and (max-width: 1199.8px) {
+  .bg-head-home {
+    background-size: 100% auto; }
+    .bg-head-home .techs {
+      display: none; }
+
+  .about .title, .top-projects .title, .why-us .title {
+    font-size: 34px;
+    line-height: 1.4; }
+
+  .about {
+    padding-top: 10px; }
+    .about p {
+      font-size: 17px; }
+
+  .services .service {
+    margin-bottom: 40px; }
+    .services .service:last-child {
+      margin-bottom: 20px; }
+    .services .service-icon {
+      margin-bottom: 25px; }
+    .services .service-name a {
+      font-size: 22px; }
+    .services .service p {
+      font-size: 17px;
+      margin-bottom: 0; }
+
+  .top-projects {
+    padding-top: 110px;
+    padding-bottom: 110px; }
+    .top-projects .project-list {
+      margin-top: 50px; }
+
+  .why-us {
+    padding-top: 40px; }
+    .why-us .skills {
+      padding-top: 0; }
+    .why-us .skill {
+      margin-bottom: 20px;
+      padding: 18px; }
+      .why-us .skill p {
+        font-size: 17px;
+        padding-left: 10px; }
+
+  .how-works .step {
+    padding: 5px 0; }
+    .how-works .step:before {
+      left: 24px; }
+    .how-works .step .stt {
+      width: 50px;
+      height: 50px;
+      border-width: 3px; }
+      .how-works .step .stt span {
+        font-size: 24px;
+        line-height: 45px; }
+    .how-works .step .plan {
+      padding-left: 30px;
+      padding-top: 12px; }
+      .how-works .step .plan-name {
+        font-size: 20px; }
+      .how-works .step .plan p {
+        font-size: 16px; }
+    .how-works .step:hover .stt {
+      box-shadow: 0 0 0 6px rgba(2, 38, 98, 0.12); }
+      .how-works .step:hover .stt span {
+        font-size: 30px; } }

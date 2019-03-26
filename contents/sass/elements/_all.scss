@@ -1,0 +1,192 @@
+* {
+  font-family: 'Muli', sans-serif;
+  font-weight: 400;
+  
+}
+
+p {
+  color: $gray-3;
+}
+
+a,.btn,button {
+  font-weight: 700;
+}
+
+body {
+  overflow-x: hidden;
+  right: 0;
+
+  &.fixed-screen {
+    position: relative;
+    right: 240px;
+    @include transition-ease(right, 0.15s);
+  }
+}
+
+.triangle-top {
+  position: relative;
+  margin-top: 60px;
+
+  &:before,&:after {
+    content: '';
+    width: 50%;
+    height: 60px;
+    background-color: white;
+    position: absolute;
+    top: -30px;
+  }
+
+  &:before {
+    left: 0;
+    @include skewY(5);
+  }
+
+  &:after {
+    right: 0;
+    @include skewY(-5);
+  }
+}
+
+.triangle-bottom {
+  position: relative;
+  margin-bottom: 60px;
+
+  &:before,&:after {
+    content: '';
+    width: 50%;
+    height: 60px;
+    background-color: white;
+    position: absolute;
+    bottom: -30px;
+  }
+
+  &:before {
+    left: 0;
+    @include skewY(5);
+  }
+
+  &:after {
+    right: 0;
+    @include skewY(-5);
+  }
+}
+
+.dash-icon {
+  background: url(../../images/theme1/dash-icon.svg) no-repeat center;
+  background-position: 100% 100%;
+  height: 5px;
+  width: 112px;
+  margin: 70px auto;
+  opacity: .45;
+}
+
+
+// list background: bg
+$bgList: 
+        ('gray', $gray-f5),
+        ('blue-gray', rgba($mau-xanh-md,.03)),
+        ('green-gray', rgba($mau-xanh-la,.03)),
+        ('blue', $mau-xanh-md);
+
+@each $item in $bgList {
+  .bg-#{nth($item,1)} {
+    background-color: #{nth($item,2)};
+  }
+}
+
+// h1 -> h6
+@for $i from 1 to 6 {
+  h#{$i} {
+    font-family: 'Muli', sans-serif;
+    font-weight: 700;
+  }
+}
+
+.screen-overlay {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: .7;
+}
+
+
+
+noscript {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: $gray-f5 - 5;
+  padding: 25px;
+
+  > div {
+    background-color: white;
+    @include box-shadow(0,5px,15px,rgba(black,.1));
+    max-width: 800px;
+    width: 100%;
+    padding: 45px 65px;
+    position: relative;
+    margin: auto;
+    top: 50%;
+    left: 0;
+    @include translateY(-50%);
+  }
+
+  .error-icon {
+    float: left;
+    svg {
+      width: 80px;
+      height: 80px;
+      color: $mau-hong - 35;
+      fill: $mau-hong - 35;
+    }
+  }
+
+  .error-text {
+    overflow: hidden;
+    padding-left: 40px;
+
+    p {
+      font-size: 17px;
+      
+      &:first-child {
+        font-weight: bold;
+        font-size: 22px;
+      }
+
+      strong {
+        color: $mau-hong - 35;
+      }
+    }
+  }
+
+}
+
+
+@include responsive(xs) {
+//   .screen-overlay {
+//     z-index: 90;
+//   }
+  
+
+  .triangle-bottom {
+    margin-bottom: 30px;
+  }
+  .triangle-top {
+    margin-top: 30px;
+  }
+  .dash-icon {
+    margin: 40px auto;
+  }
+}
