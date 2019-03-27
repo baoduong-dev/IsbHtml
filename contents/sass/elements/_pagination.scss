@@ -1,0 +1,53 @@
+//pagination
+.pages {
+  padding: 20px 0;
+}
+
+
+.pagination {
+  .page-item {
+    margin-left: 6px;
+    margin-right: 6px;
+    line-height: 38px;
+
+    a {
+      width: 38px;
+      height: 38px;
+      border-radius: 5px;
+      border: 1px solid transparent;
+      background-color: $gray-e;
+      color: $gray-5;
+      text-align: center;
+      line-height: 38px;
+      display: block;
+      font-size: 15px;
+
+      i {
+        font-size: 16px;
+      }
+
+      &:hover {
+        color: initial;
+        background-color: $gray-e0;
+      }
+
+      &:hover,&:focus {
+        text-decoration: none;
+      }
+    }
+
+    &.active {
+      a {
+        border-color: $mau-xanh-md;
+        color: $mau-xanh-md;
+        background-color: white;
+        
+        &:hover,&:focus {
+          border-color: $mau-xanh-md;
+          color: $mau-xanh-md;
+          background-color: white;
+        }
+      }
+    }
+  }
+}
