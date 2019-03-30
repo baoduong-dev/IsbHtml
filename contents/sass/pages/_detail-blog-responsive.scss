@@ -23,6 +23,12 @@
   .related-blog {
     padding-bottom: 0;
   }
+
+  .full-content {
+    p,ul li {
+      font-size: 16px;
+    }
+  }
 }
 
 @include responsive(sm) {

@@ -24,9 +24,14 @@
         margin-bottom: 0;
         padding-left: 15px;
         padding-right: 15px; }
-    .content-element h2 {
-      font-size: 28px;
+    .content-element h2, .content-element h3, .content-element h4 {
       margin-bottom: 30px; }
+    .content-element h2 {
+      font-size: 28px; }
+    .content-element h3 {
+      font-size: 24px; }
+    .content-element h4 {
+      font-size: 20px; }
     .content-element .tech-item {
       margin-top: 25px; }
 
@@ -42,6 +47,8 @@
       display: block;
       max-width: 100%;
       margin-bottom: 30px; }
+      .service-package .package-list {
+        margin-bottom: 80px; }
       .service-package .package-body {
         height: 100px;
         padding-bottom: 0;
@@ -54,14 +61,65 @@
         .service-package .package .btn-readmore:hover, .service-package .package .btn-readmore:focus {
           text-decoration: none; }
       .service-package .package.show .package-body {
-        height: auto; } }
+        height: auto; }
+      .service-package .package .btn-default {
+        margin-bottom: 10px; }
+
+  .right-service, .left-service {
+    margin-top: 40px; }
+    .right-service .interest, .left-service .interest {
+      margin-bottom: 35px; }
+      .right-service .interest:first-child, .left-service .interest:first-child {
+        margin-top: 0 !important; }
+      .right-service .interest .icon, .left-service .interest .icon {
+        float: left;
+        margin-left: 0;
+        margin-right: 20px;
+        width: 50px;
+        height: 50px; }
+        .right-service .interest .icon i, .left-service .interest .icon i {
+          line-height: 50px;
+          font-size: 24px; }
+      .right-service .interest .content, .left-service .interest .content {
+        text-align: left; }
+        .right-service .interest .content h3, .right-service .interest .content h4, .left-service .interest .content h3, .left-service .interest .content h4 {
+          font-size: 18px; }
+
+  .center-service {
+    margin-top: 40px; }
+
+  .line {
+    margin: 35px auto; }
+
+  .quality {
+    padding: 20px; }
+    .quality .content h3, .quality .content h4 {
+      font-size: 18px; }
+
+  .check-item {
+    margin-top: 15px; }
+
+  .tech-item-2 {
+    margin-top: 10px; }
+    .tech-item-2 .icon {
+      margin-bottom: 25px; }
+    .tech-item-2 h3, .tech-item-2 h4 {
+      font-size: 20px; }
+
+  .optimize {
+    padding: 40px 20px; }
+    .optimize h3, .optimize h4 {
+      font-size: 20px; }
+    .optimize p {
+      margin-bottom: 10px; } }
 @media (min-width: 576px) and (max-width: 767.8px) {
   .detail-service-header {
     padding-top: 50px; }
     .detail-service-header h1 {
       font-size: 38px; }
     .detail-service-header .dash-icon {
-      margin-bottom: 0; }
+      margin-bottom: 10px;
+      margin-top: 50px; }
 
   .content-element {
     padding: 50px 0; }
@@ -70,7 +128,7 @@
     .content-element ul li {
       font-size: 16px !important; }
     .content-element ul[class*="-list"] li {
-      margin-bottom: 10px; }
+      margin-bottom: 12px; }
     .content-element .check-list li:before {
       font-size: 22px;
       margin-top: -3px; }
@@ -81,15 +139,14 @@
         margin-bottom: 0;
         padding-left: 15px;
         padding-right: 15px; }
-    .content-element h2 {
-      font-size: 28px;
+    .content-element h2, .content-element h3, .content-element h4 {
       margin-bottom: 30px; }
+    .content-element h2 {
+      font-size: 28px; }
     .content-element h3 {
       font-size: 24px; }
     .content-element h4 {
       font-size: 20px; }
-    .content-element h5, .content-element h6 {
-      font-size: 18px; }
     .content-element .tech-item {
       margin-top: 25px; }
 
@@ -97,12 +154,6 @@
     margin-bottom: 50px; }
     .service-package h2 {
       font-size: 28px; }
-    .service-package h3 {
-      font-size: 24px; }
-    .service-package h4 {
-      font-size: 20px; }
-    .service-package h5, .service-package h6 {
-      font-size: 18px; }
     .service-package .package-list {
       display: block; }
       .service-package .package-list.package-4 .package {
@@ -111,6 +162,8 @@
       display: block;
       max-width: 100%;
       margin-bottom: 30px; }
+      .service-package .package-list {
+        margin-bottom: 80px; }
       .service-package .package-body {
         height: 100px;
         padding-bottom: 0;
@@ -123,14 +176,65 @@
         .service-package .package .btn-readmore:hover, .service-package .package .btn-readmore:focus {
           text-decoration: none; }
       .service-package .package.show .package-body {
-        height: auto; } }
+        height: auto; }
+      .service-package .package .btn-default {
+        margin-bottom: 10px; }
+
+  .right-service, .left-service {
+    margin-top: 40px; }
+    .right-service .interest, .left-service .interest {
+      margin-bottom: 35px; }
+      .right-service .interest:first-child, .left-service .interest:first-child {
+        margin-top: 0 !important; }
+      .right-service .interest .icon, .left-service .interest .icon {
+        float: left;
+        margin-left: 0;
+        margin-right: 20px;
+        width: 50px;
+        height: 50px; }
+        .right-service .interest .icon i, .left-service .interest .icon i {
+          line-height: 50px;
+          font-size: 24px; }
+      .right-service .interest .content, .left-service .interest .content {
+        text-align: left; }
+        .right-service .interest .content h3, .right-service .interest .content h4, .left-service .interest .content h3, .left-service .interest .content h4 {
+          font-size: 18px; }
+
+  .center-service {
+    margin-top: 40px; }
+
+  .line {
+    margin: 35px auto; }
+
+  .quality {
+    padding: 20px; }
+    .quality .content h3, .quality .content h4 {
+      font-size: 18px; }
+
+  .check-item {
+    margin-top: 15px; }
+
+  .tech-item-2 {
+    margin-top: 10px; }
+    .tech-item-2 .icon {
+      margin-bottom: 25px; }
+    .tech-item-2 h3, .tech-item-2 h4 {
+      font-size: 20px; }
+
+  .optimize {
+    padding: 40px 20px; }
+    .optimize h3, .optimize h4 {
+      font-size: 20px; }
+    .optimize p {
+      margin-bottom: 10px; } }
 @media (min-width: 768px) and (max-width: 991.8px) {
   .detail-service-header {
     padding-top: 50px; }
     .detail-service-header h1 {
       font-size: 38px; }
     .detail-service-header .dash-icon {
-      margin-bottom: 0; }
+      margin-bottom: 10px;
+      margin-top: 50px; }
 
   .content-element {
     padding: 50px 0; }
@@ -139,7 +243,7 @@
     .content-element ul li {
       font-size: 16px !important; }
     .content-element ul[class*="-list"] li {
-      margin-bottom: 10px; }
+      margin-bottom: 15px; }
     .content-element .check-list li:before {
       font-size: 22px;
       margin-top: -3px; }
@@ -150,6 +254,14 @@
         margin-bottom: 0;
         padding-left: 15px;
         padding-right: 15px; }
+    .content-element h2, .content-element h3, .content-element h4 {
+      margin-bottom: 30px; }
+    .content-element h2 {
+      font-size: 28px; }
+    .content-element h3 {
+      font-size: 24px; }
+    .content-element h4 {
+      font-size: 20px; }
     .content-element .tech-item {
       margin-top: 25px; }
 
@@ -174,4 +286,39 @@
         margin-left: auto;
         margin-right: auto; }
         .service-package .package .btn-readmore:hover, .service-package .package .btn-readmore:focus {
-          text-decoration: none; } }
+          text-decoration: none; }
+
+  .right-service, .left-service {
+    margin-top: 40px; }
+    .right-service .interest:first-child, .left-service .interest:first-child {
+      margin-top: 0 !important; }
+    .right-service .interest .icon, .left-service .interest .icon {
+      float: left;
+      margin-left: 0;
+      margin-right: 30px;
+      margin-top: -5px;
+      width: 70px;
+      height: 70px; }
+      .right-service .interest .icon i, .left-service .interest .icon i {
+        line-height: 70px; }
+    .right-service .interest .content, .left-service .interest .content {
+      text-align: left; }
+
+  .center-service {
+    margin-top: 40px; }
+
+  .line {
+    margin: 35px auto; } }
+@media (min-width: 992px) and (max-width: 1199.8px) {
+  .detail-service-header {
+    padding-top: 50px; }
+    .detail-service-header .dash-icon {
+      margin-bottom: 20px;
+      margin-top: 50px; }
+
+  .service-package .package-head * {
+    font-size: 20px; }
+  .service-package .package-body .price {
+    font-size: 25px; }
+  .service-package .package-body ul li {
+    font-size: 15px; } }

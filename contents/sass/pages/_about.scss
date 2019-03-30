@@ -1,0 +1,163 @@
+//style about page
+
+.about-header {
+  * {
+    color: white !important;
+  }
+
+  background-color: black;
+  background-image: url(../../images/theme1/bg-about.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  display: block;
+  text-align: center;
+  padding: 100px 0;
+
+
+  .breadcrumb-item+.breadcrumb-item::before {
+    color: white;
+  }
+
+  h1 {
+    font-weight: 900;
+    letter-spacing: 3px;
+    font-size: 42px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    margin-top: 50px;
+  }
+
+  p {
+    font-size: 20px;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+  li {
+    font-size: 18px;
+    
+  }
+}
+
+h2,h3,h4,h5,h6 {
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+}
+
+
+p {
+  font-size: 18px;
+  color: $gray-5;
+  margin-bottom: 30px;
+}
+
+.check {
+  list-style: none;
+
+  li {
+    padding-left: 40px;
+    position: relative;
+    margin-bottom: 20px;
+
+    &:before {
+      content: '\f058';
+      font-family: $font-icon-free;
+      font-size: 24px;
+      position: absolute;
+      top: 0;
+      margin-top: -5px;
+      left: 0;
+      color: lighten($mau-xanh-md,15);
+      font-weight: 700;
+    }
+
+    p {
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.check-col-6 {
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  li {
+    width: 50%;
+    float: left;
+    padding-right: 25px;
+
+    &:before {
+      font-weight: 400;
+    }
+  }
+}
+
+.about-content {
+  padding-top: 80px;
+}
+
+.line {
+  margin: 50px auto;
+  height: 3px;
+  width: 50px;
+  background-color: lighten($mau-xanh-md,15);
+}
+
+.img {
+  max-width: 100%;
+  margin: 0 auto 30px;
+  display: block;
+}
+
+img {
+  max-width: 100%;
+}
+
+.about-video {
+  padding: 80px 0;
+}
+
+.target {
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 80px;
+
+  .icon {
+    width: 50px;
+    float: left;
+    margin-right: 20px;
+
+    i {
+      font-size: 45px;
+      color: lighten($mau-xanh-md,15);
+    }
+  }
+
+  .content {
+    overflow: hidden;
+
+    h3,h4 {
+      font-size: 22px;
+    }
+
+    p {
+      font-size: 16px;
+      margin-bottom: 0;
+    }
+  }
+}

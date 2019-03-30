@@ -50,9 +50,20 @@
       }
     }
 
+    h2,h3,h4 {
+      margin-bottom: 30px;
+    }
+
     h2 {
       font-size: 28px;
-      margin-bottom: 30px;
+    }
+
+    h3 {
+      font-size: 24px;
+    }
+
+    h4 {
+      font-size: 20px;
     }
 
     .tech-item {
@@ -81,6 +92,10 @@
       max-width: 100%;
       margin-bottom: 30px;
 
+      &-list {
+        margin-bottom: 80px;
+      }
+
       &-body {
         height: 100px;
         padding-bottom: 0;
@@ -105,8 +120,91 @@
           height: auto;
         }
       }
+
+      .btn-default {
+        margin-bottom: 10px;
+      }
     }
   }
+
+  .right,.left {
+    &-service {
+      margin-top: 40px;
+
+      .interest {
+        margin-bottom: 35px;
+        &:first-child {
+          margin-top: 0 !important;
+        }
+        .icon {
+          float: left;
+          margin-left: 0;
+          margin-right: 20px;
+          width: 50px;
+          height: 50px;
+          
+          i {
+            line-height: 50px;
+            font-size: 24px;
+          }
+        }
+        .content {
+          text-align: left;
+  
+          h3,h4 {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  .center-service {
+    margin-top: 40px;
+  }
+
+  .line {
+    margin: 35px auto;
+  }
+
+  .quality {
+    padding: 20px;
+
+    .content {
+      h3,h4 {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .check-item {
+    margin-top: 15px;
+  }
+
+  .tech-item-2 {
+    margin-top: 10px;
+
+    .icon {
+      margin-bottom: 25px;
+    }
+
+    h3,h4 {
+      font-size: 20px;
+    }
+  }
+
+  .optimize {
+    padding: 40px 20px;
+
+    h3,h4 {
+      font-size: 20px;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+  }
+
 }
 
 
@@ -114,13 +212,13 @@
 @include responsive(sm) {
   .detail-service-header {
     padding-top: 50px;
-
     h1 {
       font-size: 38px;
     }
 
     .dash-icon {
-      margin-bottom: 0;
+      margin-bottom: 10px;
+      margin-top: 50px;
     }
   }
 
@@ -137,7 +235,7 @@
       }
       &[class*="-list"] {
         li {
-          margin-bottom: 10px;
+          margin-bottom: 12px;
         }
       }
     }
@@ -162,21 +260,20 @@
       }
     }
 
+    h2,h3,h4 {
+      margin-bottom: 30px;
+    }
+
     h2 {
       font-size: 28px;
-      margin-bottom: 30px;
     }
 
     h3 {
       font-size: 24px;
     }
-  
+
     h4 {
       font-size: 20px;
-    }
-  
-    h5,h6 {
-      font-size: 18px;
     }
 
     .tech-item {
@@ -188,18 +285,6 @@
     margin-bottom: 50px;
     h2 {
       font-size: 28px;
-    }
-
-    h3 {
-      font-size: 24px;
-    }
-  
-    h4 {
-      font-size: 20px;
-    }
-  
-    h5,h6 {
-      font-size: 18px;
     }
 
     .package-list {
@@ -216,6 +301,10 @@
       display: block;
       max-width: 100%;
       margin-bottom: 30px;
+
+      &-list {
+        margin-bottom: 80px;
+      }
 
       &-body {
         height: 100px;
@@ -241,6 +330,88 @@
           height: auto;
         }
       }
+
+      .btn-default {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .right,.left {
+    &-service {
+      margin-top: 40px;
+
+      .interest {
+        margin-bottom: 35px;
+        &:first-child {
+          margin-top: 0 !important;
+        }
+        .icon {
+          float: left;
+          margin-left: 0;
+          margin-right: 20px;
+          width: 50px;
+          height: 50px;
+          
+          i {
+            line-height: 50px;
+            font-size: 24px;
+          }
+        }
+        .content {
+          text-align: left;
+  
+          h3,h4 {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  .center-service {
+    margin-top: 40px;
+  }
+
+  .line {
+    margin: 35px auto;
+  }
+
+  .quality {
+    padding: 20px;
+
+    .content {
+      h3,h4 {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .check-item {
+    margin-top: 15px;
+  }
+
+  .tech-item-2 {
+    margin-top: 10px;
+
+    .icon {
+      margin-bottom: 25px;
+    }
+
+    h3,h4 {
+      font-size: 20px;
+    }
+  }
+
+  .optimize {
+    padding: 40px 20px;
+
+    h3,h4 {
+      font-size: 20px;
+    }
+
+    p {
+      margin-bottom: 10px;
     }
   }
 }
@@ -256,7 +427,8 @@
     }
 
     .dash-icon {
-      margin-bottom: 0;
+      margin-bottom: 10px;
+      margin-top: 50px;
     }
   }
 
@@ -273,7 +445,7 @@
       }
       &[class*="-list"] {
         li {
-          margin-bottom: 10px;
+          margin-bottom: 15px;
         }
       }
     }
@@ -298,10 +470,21 @@
       }
     }
 
-    // h2 {
-    //   font-size: 28px;
-    //   margin-bottom: 30px;
-    // }
+    h2,h3,h4 {
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      font-size: 28px;
+    }
+
+    h3 {
+      font-size: 24px;
+    }
+
+    h4 {
+      font-size: 20px;
+    }
 
     .tech-item {
       margin-top: 25px;
@@ -347,7 +530,69 @@
       }
     }
   }
+
+  .right,.left {
+    &-service {
+      margin-top: 40px;
+
+      .interest {
+        &:first-child {
+          margin-top: 0 !important;
+        }
+        .icon {
+          float: left;
+          margin-left: 0;
+          margin-right: 30px;
+          margin-top: -5px;
+          width: 70px;
+          height: 70px;
+
+          i {
+            line-height: 70px;
+          }
+        }
+        .content {
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  .center-service {
+    margin-top: 40px;
+  }
+
+  .line {
+    margin: 35px auto;
+  }
+
+  
 }
 
+@include responsive(lg) {
+  .detail-service-header {
+    padding-top: 50px;
 
-
+    .dash-icon {
+      margin-bottom: 20px;
+      margin-top: 50px;
+    }
+  }
+  .service-package {
+    .package-head {
+      * {
+        font-size: 20px;
+      }
+    }
+    .package-body {
+      .price {
+        font-size: 25px;
+      }
+      ul {
+        li {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}

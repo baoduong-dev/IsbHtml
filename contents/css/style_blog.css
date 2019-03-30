@@ -68,11 +68,12 @@
   border-radius: 5px;
   position: relative;
   padding-top: 30px;
+  margin-bottom: 45px;
   background-color: #ccc; }
   .project-item:before {
     content: '';
     background: url(../../images/theme1/browser-bar.svg) no-repeat center;
-    background-size: cover;
+    background-size: contain;
     background-color: #dbdbdb;
     width: 101%;
     height: 30px;
@@ -178,7 +179,8 @@
   .project-item {
     max-height: none; }
     .project-item:before {
-      height: 35px; }
+      height: 35px;
+      background-size: cover; }
     .project-item .project-content .project-name {
       font-size: 16px; }
 
@@ -200,10 +202,12 @@
     .blog-item .blog-name {
       font-size: 18px; } }
 @media (min-width: 576px) and (max-width: 767.8px) {
-  .project-item:before {
-    background-size: 100% 100%; }
-  .project-item .project-content .project-name {
-    font-size: 16px; }
+  .project-item {
+    max-height: none; }
+    .project-item:before {
+      background-size: contain !important; }
+    .project-item .project-content .project-name {
+      font-size: 16px; }
 
   .blog-item {
     display: block;
@@ -228,7 +232,7 @@
       font-size: 18px; } }
 @media (min-width: 768px) and (max-width: 991.8px) {
   .project-item:before {
-    background-size: 100% 100%;
+    background-size: 100% 100% !important;
     margin-top: -5px; }
   .project-item .project-content .project-name {
     font-size: 16px; }

@@ -1,0 +1,165 @@
+// import elements folder
+
+
+@import "elements/mixins";
+@import "elements/variables";
+// @import "elements/buttons";
+// @import "elements/all";
+
+@import "elements/breadcrumb";
+
+// import pages folder
+.faq {
+  padding-top: 100px;
+  background-color: rgba($mau-xanh-md,.03);
+
+  h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 50px;
+    color: $mau-xanh-md;
+  }
+
+  .faq-list {
+    background-color: white;
+    position: relative;
+    margin-bottom: 100px;
+    
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 30%;
+      z-index: 0;
+      @include gradient(to bottom, $gray-blue, white);
+    }
+  }
+}
+
+.card {
+  border-radius: 5px !important;
+  .card-header {
+    padding: 0;
+    background-color: rgba($mau-xanh-md,.03);
+  }
+
+  .card-body {
+    padding: 25px;
+    p {
+      font-size: 17px;
+      line-height: 1.7;
+
+    }
+  }
+
+  h2 {
+    a,button {
+      display: block;
+      height: auto;
+      padding: .45rem 1.25rem;
+      text-transform: none;
+      font-size: 20px;
+      width: 100%;
+      text-align: left;
+      color: lighten($mau-xanh-md,20);
+
+      &:hover,&:focus {
+        text-decoration: none;
+      }
+
+      &:after {
+        content: '\f055';
+        font-family: $font-icon-free;
+        font-weight: 700;
+        font-size: 22px;
+        float: right;
+      }
+    }
+  }
+}
+
+.faq-item {
+  margin-bottom: 25px;
+  border: 1px solid rgba($mau-xanh-md,.1) !important;
+
+  &.active {
+    border-color: rgba($mau-xanh-md,.4) !important;
+    h2 {
+      a,button {
+        color: $gray-4;
+        &:after {
+          content: '\f068';
+        }
+      }
+    }
+  }
+}
+
+@include responsive(xs) {
+  .faq {
+    padding-top: 50px;
+    h1 {
+      font-size: 38px;
+    }
+    .faq-list {
+      margin-bottom: 50px;
+    }
+  }
+
+  .card {
+  
+    .card-body {
+      padding: 20px;
+      p {
+        font-size: 16px;  
+      }
+    }
+  
+    h2 {
+      a,button {
+        font-size: 17px;
+        padding: .35rem 1rem;
+        &:after {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}
+
+@include responsive(sm) {
+  .faq {
+    padding-top: 50px;
+    h1 {
+      font-size: 38px;
+    }
+    .faq-list {
+      margin-bottom: 50px;
+    }
+  }
+
+  .card {
+  
+    .card-body {
+      padding: 20px;
+      p {
+        font-size: 16px;  
+      }
+    }
+  
+    h2 {
+      a,button {
+        font-size: 17px;
+        padding: .35rem 1rem;
+        &:after {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}

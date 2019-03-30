@@ -27,11 +27,34 @@
 }
 
 .btn-default {
+  
   background-color: $mau-xanh-md;
   color: white;
 
   &:hover,&:focus {
     background-color: lighten($mau-xanh-md,25);
+    color: rgba(white,.9);
+  }
+}
+
+.btn-default-outline {
+  background-color: transparent;
+  border: 1px solid $mau-xanh-md;
+  color: lighten($mau-xanh-md,15);
+
+  &:hover,&:focus {
+    border-color: $mau-xanh-md;
+    background-color: white;
+    color: lighten($mau-xanh-md,15);
+  }
+}
+
+.btn-pink {
+  background-color: $mau-hong;
+  color: white;
+
+  &:hover,&:focus {
+    background-color: lighten($mau-hong,5);
     color: rgba(white,.9);
   }
 }

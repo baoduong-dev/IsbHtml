@@ -68,10 +68,10 @@
     font-size: 28px;
     &:before {
       content: '';
-      margin-right: 10px;
+      margin-right: 5px;
       display: inline-block;
-      border: 6px solid transparent;
-      border-right-color: lighten($mau-xanh-md,25);
+      border: 8px solid transparent;
+      //border-right-color: lighten($mau-xanh-md,25);
       border-bottom-color: lighten($mau-xanh-md,25);
     }
   }
@@ -89,6 +89,12 @@
     display: block;
     max-width: 100%;
     margin-bottom: 35px;
+  }
+
+  ul {
+    li {
+      font-size: 18px;
+    }
   }
 }
 

@@ -1,0 +1,91 @@
+// import elements folder
+
+
+@import "elements/mixins";
+@import "elements/variables";
+// @import "elements/buttons";
+// @import "elements/all";
+
+
+.not-found {
+  padding: 50px 0;
+  height: 100vh;
+  position: relative;
+
+  img {
+    max-width: 90%;
+    opacity: .7;
+  }
+
+  .error-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    @include translate(-50%,-50%);
+    margin-top: 160px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  h1,p {
+    @include text-shadow(0,1px,1px,white);
+  }
+
+  h1 {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 28px;
+    letter-spacing: 3px;
+  }
+
+  p {
+    margin-top: 15px;
+    font-size: 18px;
+    margin-bottom: 35px;
+  }
+}
+
+@include responsive(xs) {
+  .not-found {
+    padding: 0 0 100px;
+    height: auto;
+    margin-bottom: 80px;
+    h1 {
+      font-size: 22px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+}
+
+@include responsive(sm) {
+  .not-found {
+    padding: 0 0 50px;
+    height: auto;
+    margin-bottom: 80px;
+    h1 {
+      font-size: 22px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+}
+
+@include responsive(md) {
+  .not-found {
+    padding: 0 0 50px;
+    height: auto;
+    margin-bottom: 80px;
+  }
+}
+
+@include responsive(lg) {
+  .not-found {
+    padding: 0 0 50px;
+    height: auto;
+    margin-bottom: 80px;
+  }
+}
