@@ -5,12 +5,13 @@
   border-radius: 5px;
   position: relative;
   padding-top: 30px;
+  margin-bottom: 45px;
   background-color: $gray-c;
   
   &:before {
     content: '';
     background: url(../../images/theme1/browser-bar.svg) no-repeat center;
-    background-size: cover;
+    background-size: contain;
     background-color: #dbdbdb;
     width: 101%;
     height: 30px;
@@ -140,7 +141,7 @@
     max-height: none;
     &:before {
       height: 35px;
-      
+      background-size: cover;
     }
 
     .project-content {
@@ -181,8 +182,10 @@
 
 @include responsive(sm) {
   .project-item {
+    max-height: none;
     &:before {
-      background-size: 100% 100%;
+      //background-size: 100% 100%;
+      background-size: contain !important;
     }
 
     .project-content {
@@ -226,7 +229,7 @@
   .project-item {
     &:before {
       // height: 25px;
-      background-size: 100% 100%;
+      background-size: 100% 100% !important;
       margin-top: -5px;
     }
 

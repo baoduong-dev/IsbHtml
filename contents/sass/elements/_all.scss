@@ -12,6 +12,18 @@ a,.btn,button {
   font-weight: 700;
 }
 
+.blue-color {
+  color: lighten($mau-xanh-md,15);
+}
+
+.pink-color {
+  color: $mau-hong;
+}
+
+.green-color {
+  color: darken($mau-xanh-la,25);
+}
+
 body {
   overflow-x: hidden;
   right: 0;
@@ -26,48 +38,59 @@ body {
 .triangle-top {
   position: relative;
   margin-top: 60px;
+  overflow: hidden;
 
   &:before,&:after {
     content: '';
     width: 50%;
-    height: 60px;
+    height: calc(100%/2);
     background-color: white;
     position: absolute;
-    top: -30px;
+    bottom: 100%;
   }
 
   &:before {
     left: 0;
-    @include skewY(5);
+    @include skewY(4);
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
   }
 
   &:after {
     right: 0;
-    @include skewY(-5);
+    @include skewY(-4);
+    -webkit-transform-origin: top right;
+    transform-origin: top right;
   }
 }
 
 .triangle-bottom {
   position: relative;
   margin-bottom: 60px;
+  overflow: hidden;
 
   &:before,&:after {
     content: '';
     width: 50%;
-    height: 60px;
+    height: calc(100%/2);
     background-color: white;
     position: absolute;
-    bottom: -30px;
+    // bottom: -30px;
+    top: 100%;
   }
 
   &:before {
     left: 0;
-    @include skewY(5);
+    @include skewY(4);
+    -webkit-transform-origin: top right;
+    transform-origin: top right;
   }
 
   &:after {
     right: 0;
-    @include skewY(-5);
+    @include skewY(-4);
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
   }
 }
 
@@ -89,9 +112,19 @@ $bgList:
         ('blue', $mau-xanh-md);
 
 @each $item in $bgList {
-  .bg-#{nth($item,1)} {
-    background-color: #{nth($item,2)};
+  @if (#{nth($item,1)} == 'blue') {
+    .bg-blue {
+      * {
+        color: white;
+      }
+      
+    }
   }
+    .bg-#{nth($item,1)} {
+      background-color: #{nth($item,2)};
+    } 
+  
+  
 }
 
 // h1 -> h6

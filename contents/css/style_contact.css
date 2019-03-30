@@ -78,6 +78,9 @@ input[type="number"] {
 .contact-form .btn-submit {
   min-width: 180px;
   margin-top: 20px; }
+.contact-form .g-captcha {
+  width: 304px;
+  margin: auto; }
 
 @media (max-width: 575.8px) {
   .contact-page {

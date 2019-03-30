@@ -1,0 +1,58 @@
+.project-page {
+  padding-top: 100px;
+  background-color: rgba($mau-xanh-md,.03);
+
+  h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+    color: $mau-xanh-md;
+  }
+
+  .projects {
+    position: relative;
+    background-color: white;
+    
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 30%;
+      z-index: 0;
+      @include gradient(to bottom, $gray-blue, white);
+    }
+  }
+}
+
+@include responsive(xs) {
+  .project-page {
+    padding-top: 50px;
+    h1 {
+      font-size: 38px;
+    }
+  }
+}
+
+@include responsive(sm) {
+  .project-page {
+    padding-top: 50px;
+    h1 {
+      font-size: 38px;
+    }
+  }
+}
+
+@include responsive(md) {
+  .project-page {
+    padding-top: 50px;
+
+    h1 {
+      font-size: 38px;
+    }
+  }
+}
